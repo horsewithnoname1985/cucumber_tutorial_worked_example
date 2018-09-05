@@ -1,0 +1,6 @@
+RunCucumberTest.class
+nicebank/CashSlotSteps.class
+nicebank/AccountSteps.class
+nicebank/TellerSteps.class
+support/KnowsTheDomain.class
+transforms/MoneyConverter.class
