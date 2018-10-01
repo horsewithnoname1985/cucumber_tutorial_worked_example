@@ -1,16 +1,16 @@
 package nicebank;
 
-public class Teller {
+public class AutomatedTeller implements Teller{
     CashSlot cashSlot;
     Display display;
     String message;
 
-    public Teller(CashSlot cashSlot, Display display){
+    public AutomatedTeller(CashSlot cashSlot, Display display){
         this.cashSlot = cashSlot;
         this.display = display;
     }
 
-    public boolean withdraw(Account account, Money money) {
+    public boolean withdrawFrom(Account account, Money money) {
         Money savings = account.getBalance();
         boolean balanceOK = checkBalance(savings, money);
         if (balanceOK) {

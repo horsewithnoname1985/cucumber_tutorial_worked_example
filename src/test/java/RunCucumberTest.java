@@ -7,7 +7,7 @@ import cucumber.api.SnippetType;
 @CucumberOptions(
         plugin = {"pretty", "html:target/cucumber-reports"},
         features = "src/test/resources/cash_withdrawal.feature",
-        glue = {"nicebank"},
+        glue = {"nicebank", "hooks"},
         snippets = SnippetType.CAMELCASE,
         dryRun = false
 )
